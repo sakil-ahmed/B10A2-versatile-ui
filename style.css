@@ -10,9 +10,14 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.circle{
 
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
 }
+
 /* global Style */
 img {
     width: 100%;
@@ -182,9 +187,14 @@ button {
 }
 
 .left-counter {
+    width: 155px;
     position: absolute;
     bottom: 63px;
     left: -85px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .right-counter {
@@ -437,5 +447,79 @@ button {
     .footer-right {
         flex-direction: column;
         row-gap: 20px;
+    }
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 132px;
+}
+
+.header nav {
+    display: inline-flex;
+
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+
+}
+
+.header nav ul li {
+    list-style: none;
+    color: white;
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
+
+
+}
+
+.active {
+    background: rgb(230, 83, 60);
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+
+.active a {
+    font-weight: 600;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+    .header nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .menu-icon {
+        display: none;
     }
 }
