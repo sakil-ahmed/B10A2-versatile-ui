@@ -323,3 +323,117 @@ button {
     }
 
 }
+
+.team-section {
+    margin: 88px 0;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-description {
+    max-width: 671px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.team-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.1);
+    row-gap: 30px;
+}
+
+.team-card {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-content-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+.footer-section {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.copy-write-text {
+    text-align: center;
+    padding: 36px 0;
+}
+
+.footer-description {
+    max-width: 443px;
+    width: 100%;
+}
+
+.footer-logo {
+    max-width: 256px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-top {
+    padding: 66px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    gap: 152px;
+}
+
+.footer-right h4 {
+    margin-bottom: 39px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-heading {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+@media only screen and (max-width: 883px) {
+    .footer-top {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer-right {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
